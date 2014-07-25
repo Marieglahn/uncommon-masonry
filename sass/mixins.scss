@@ -1,0 +1,66 @@
+@mixin rectangular($height){
+ height: $height;
+ width: ($height * 2);
+
+}
+@mixin wordbreaker(){
+        //IE10.
+        //removing as found better way hopefully
+	    //-ms-word-break: break-all;
+		// word-break: break-all;
+		-webkit-hyphens: auto;
+        -moz-hyphens: auto;
+        -ms-hyphens: auto;
+         hyphens: auto;
+         word-wrap: break-word;
+         //This is something only webkit understands down here
+         word-break: break-word;
+         white-space: pre-wrap;
+      
+}
+
+@mixin opacity($opacity: 1) {
+	opacity: $opacity;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=$opacity)";
+	filter: alpha(opacity=$opacity);
+	-moz-opacity: $opacity;
+    -khtml-opacity: $opacity;
+     opacity: $opacity;
+}
+
+
+@mixin box-shadow($val) {
+  -webkit-box-shadow: $val;
+  -moz-box-shadow: $val;
+  -ms-box-shadow: $val;
+  -o-box-shadow: $val;
+   box-shadow: $val;
+}
+
+@mixin border-radius($px: 2px) {
+	-webkit-border-radius: $px;
+	-moz-border-radius: $px;
+	border-radius: $px;
+}
+ 
+@mixin appearance($app) {
+	-webkit-appearance: $app;
+	-moz-appearance: $app;
+	appearance: $app;
+
+}
+
+@mixin border-box(){
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+   box-sizing: border-box;
+}
+@mixin calc($prop,$calc){
+	#{$prop}: -moz-calc(#{$calc});
+	#{$prop}: -webkit-calc(#{$calc});
+	#{$prop}: calc(#{$calc});
+}
+
+@mixin masonry-item-border($mediumgrey){
+    border: 2px solid $mediumgrey;
+}

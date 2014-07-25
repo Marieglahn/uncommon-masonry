@@ -1,0 +1,40 @@
+/* line 13, ../sass/masonry-view.scss */
+.container, body {
+  background-color: #efeeee;
+}
+
+/* line 17, ../sass/masonry-view.scss */
+.images-nav {
+  margin-bottom: 10px;
+}
+/* line 19, ../sass/masonry-view.scss */
+.images-nav a {
+  padding: 10px;
+  margin-right: 10px;
+}
+
+/* line 25, ../sass/masonry-view.scss */
+.masonry-item, .corner-stamp {
+  width: 18%;
+  background-color: white;
+  margin-bottom: 15px;
+  font-size: 11px;
+}
+/* line 31, ../sass/masonry-view.scss */
+.masonry-item .image-dimensions, .corner-stamp .image-dimensions {
+  text-align: center;
+  background-color: white;
+}
+/* line 35, ../sass/masonry-view.scss */
+.masonry-item .image-dimensions, .masonry-item .masonry-image-title, .corner-stamp .image-dimensions, .corner-stamp .masonry-image-title {
+  padding: 2px;
+}
+/* line 38, ../sass/masonry-view.scss */
+.masonry-item .masonry-image-title, .corner-stamp .masonry-image-title {
+  padding: 5px;
+}
+
+/* line 48, ../sass/masonry-view.scss */
+img {
+  max-width: 100%;
+}

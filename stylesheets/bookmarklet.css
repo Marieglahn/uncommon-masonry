@@ -1,0 +1,19 @@
+/* line 8, ../sass/bookmarklet.scss */
+.weownitsidebar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100%;
+  background-color: #1d2835;
+  z-index: 1000;
+  overflow: auto;
+  width: 400px;
+}
+/* line 17, ../sass/bookmarklet.scss */
+.weownitsidebar .weownit_images {
+  list-style-type: none;
+}
+/* line 19, ../sass/bookmarklet.scss */
+.weownitsidebar .weownit_images li {
+  padding: 5px;
+}

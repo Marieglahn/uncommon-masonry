@@ -1,0 +1,60 @@
+
+@import "colors";
+@import "fonts";
+@import "mixins";
+@import "sizes";
+
+
+//Ad to colors file:
+$lightgreybeige: #efeeee;
+$mediumgrey: #e5e5e5;
+
+
+.container, body {
+    background-color: $lightgreybeige;
+}
+
+.images-nav {
+    margin-bottom: 10px;
+    a {
+        padding: 10px;
+        margin-right: 10px;
+    }
+}
+
+.masonry-item, .corner-stamp { 
+    width: 18%;
+    background-color: $white;
+    margin-bottom: 15px;
+    font-size: 11px;
+//    @include border-radius(5px);
+    .image-dimensions {
+        text-align: center;
+        background-color: $white;
+    }
+    .image-dimensions, .masonry-image-title {
+        padding: 2px;
+    }
+    .masonry-image-title {
+        padding: 5px;
+    }
+}
+
+.masonry-item {
+//    @include masonry-item-border($mediumgrey);
+}
+
+
+img {
+    max-width: 100%;
+}
+
+//
+//.corner-stamp {
+//    background: none repeat scroll 0 0 $white;
+//    border-radius: 5px;
+//    color: $black;
+//    float: left;
+//    min-height: 340px;
+//    width: 17%;
+//}
