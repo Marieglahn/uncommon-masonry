@@ -10,51 +10,193 @@ $lightgreybeige: #efeeee;
 $mediumgrey: #e5e5e5;
 
 
-.container, body {
-    background-color: $lightgreybeige;
+//add to sizes:
+$h1size: 36px;
+$menufontsize: 14px;
+$verticalmenufontsize: 12px;
+
+
+
+//General styling:
+
+h1 {
+    font-family: 'Sorts Mill Goudy', serif;
+    font-style: italic;
+    font-size: $h1size;
+    color: $text;
 }
 
+.container, body {
+    background-color: $lightgreybeige;
+    color: $text;
+}
+
+
+//Images/Masonry specific styling:
+
 .images-nav {
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     a {
-        padding: 10px;
         margin-right: 10px;
+        color: $lightgreyblue;
+        font-size: $menufontsize;
+        text-decoration: none;
+        
+        padding: 10px 20px;
+        border: 1px solid $lightgreyblue;
+        &:hover {
+            color: $medgreyblue;
+            border-color: $medgreyblue;
+        }
+        &:active {
+            color: $white;
+            background-color: $text;
+            border-color: $text;
+        }
+    }
+    ul {
+        list-style-type: none;
+        li {
+            //width: 150px;
+            display: inline-block;                
+            margin-bottom: 10px;
+            
+        }
     }
 }
 
 .masonry-item, .corner-stamp { 
     width: 18%;
-    background-color: $white;
+    color: $text;
+    
     margin-bottom: 15px;
     font-size: 11px;
 //    @include border-radius(5px);
-    .image-dimensions {
+    .image-dimensions, .masonry-image-title  {
         text-align: center;
         background-color: $white;
     }
-    .image-dimensions, .masonry-image-title {
+    .image-dimensions {
         padding: 2px;
     }
     .masonry-image-title {
         padding: 5px;
     }
-}
+    img:hover {
+        
+        //opacity: 0.5;
+        background-color: $black;
+    }
+    
+    .text-content {
+        background: rgba(0,0,0,0.5);
+        color: white;
+        cursor: pointer;
+        display: table;
+        height: inherit !important;
+        left: 0;
+        position: absolute;
+        top: 0;
+        width: 100%;
+            a {
 
-.masonry-item {
-//    @include masonry-item-border($mediumgrey);
-}
+            color: $white;
+            display: block;
+            }
+        }
 
+    .text-content span {
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+    height: inherit; 
+
+    }
+
+}
 
 img {
     max-width: 100%;
 }
 
+.corner-stamp {
+    float: left;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-transform: uppercase;
+    
+    //background: $lightgreybeige;
+    nav.vertical {
+        font-size: $verticalmenufontsize;
+        
+        a {
+            color: $lightgreyblue;
+            display: block;
+            text-decoration: none;
+            padding: 10px 20px;
+            border: 1px solid $lightgreyblue;
+            &:hover {
+                color: $medgreyblue;
+                border-color: $medgreyblue;
+            }
+            &:active {
+                color: $text;
+                border-color: $text;
+            }
+        }
+        ul {
+            list-style-type: none;
+            text-align: center;
+            //padding-left: 10px;
+            li {
+                display: block;                
+                margin-bottom: 10px;
+                width: 150px;
+                
+            }
+        }
+        .masonry-image-overlay {
+            position: absolute;
+            left: 0px;
+            top: 0px;
+            z-index: 1000;
+            background-color: #000000;
+            opacity: 0.5;
+        }
+    }
+}
+
+
 //
-//.corner-stamp {
-//    background: none repeat scroll 0 0 $white;
-//    border-radius: 5px;
-//    color: $black;
-//    float: left;
-//    min-height: 340px;
-//    width: 17%;
-//}
+//
+//@media (min-width: 1200px) {}
+//@media (min-width: 980px) {}
+
+
+@media (min-width: 768px) and (max-width: 979px) {
+    .masonry-item, .corner-stamp { 
+        width: 22%;
+    }
+}
+//
+@media (max-width: 767px) { 
+   .masonry-item, .corner-stamp { 
+        width: 30%;
+   } 
+}
+
+
+@media (max-width: 480px) {
+    .masonry-item, .corner-stamp { 
+    width: 48%;
+}
+}
+
+
+@media (max-width: 390px) {
+    .masonry-item, .corner-stamp { 
+    width: 100%;
+}
+}
+
+

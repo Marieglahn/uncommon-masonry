@@ -13,6 +13,7 @@
     <link href="stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
         <link media="screen" rel="stylesheet" type="text/css" href="stylesheets/masonry-view.css" />
             <script src="javascripts/jquery-1.11.1.min.js"></script>    
+        <link href='http://fonts.googleapis.com/css?family=Sorts+Mill+Goudy:400italic' rel='stylesheet' type='text/css'>
 
 <!--    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>-->
 <!--    <script type="text/javascript" src="/javascripts/cache_9ff087e3f5ef9c22eab175d938d18ddf39c0a857.js"></script>-->
@@ -82,31 +83,51 @@
             
 <!--Page navigaton for Images page(s) -->
             <nav class="images-nav">
-                <a href="#">URL IMAGES</a>
-                <a href="#">MY IMAGES</a> 
-                <a href="#">BRAND IMAGES</a> 
+                <ul>
+                    <li><a href="#">URL IMAGES</a></li>
+                    <li><a href="#">MY IMAGES</a></li>
+                    <li><a href="#">BRAND IMAGES</a></li>
+                </ul> 
             </nav> 
-            
             <div id="masonry-container" class="masonry-container">
+
                 <div class="corner-stamp">
-                    <p>
-                        
-
-Ut convallis, sem sit amet interdum consectetuer, odio augue aliquam leo, nec dapibus tortor nibh sed augue.
-
-
-                    </p>
-                </div>
-                <div class="masonry-item"><img src="images/1.jpg" alt="c"/>
+                    <nav class="brands-nav vertical">
+                        <ul>
+                          <li>
+                            <a href="#">Brands</a>
+                          </li>
+                           <li>
+                            <a href="#">Categories</a>
+                          </li>
+                            <li>
+                            <a href="#">Tags</a>
+                          </li>
+                        </ul>
+                    </nav>
+                </div> 
+                <div class="masonry-item">
+                    <img class="masonry-image" src="images/1.jpg" alt="c"/>
                     <div class="image-dimensions">
                         <p>200x200</p>
                     </div>
                     <div class="masonry-image-title">
                         <p>image title goes here</p>
                     </div>
+                   
                 </div>
                 <div class="masonry-item">
-                    <img src="images/2.jpg" alt="c"/>
+                    <div>
+                         <img src="images/2.jpg" alt="c"/>
+                        <div class=text-content>
+                            <span>
+                                <a href="#">Make widget</a>
+                        <a href="#">Save to my images</a>
+                            </span>
+
+                        </div>
+                    
+                    </div>
                         <div class="image-dimensions">
                             <p>200x200</p>
                         </div>
@@ -244,22 +265,41 @@ Ut convallis, sem sit amet interdum consectetuer, odio augue aliquam leo, nec da
 
                 // initialize Masonry
                 var $container = $('#masonry-container').masonry();
+                
                 // layout Masonry again after all images have loaded
                 // NB. Potential problem with infinite scroll?
-
                   $container.imagesLoaded( function() {
                        console.log('test');
                       
                       $container.masonry({
                           itemSelector: '.masonry-item',
                           "gutter": 15,
-                          cornerStampSelector: '.corner-stamp'
+                          cornerStampSelector: '.corner-stamp',
                       });
 
                 });
                 
                 var msnry = $container.data('masonry');
+                
 
+               
+              //Hover shows opaque overlay with links:
+               $(function() {
+                  $('.text-content').hide();
+                   
+                   
+                   $('.masonry-item').hover(function() {
+                       var $image = $(this).find($(".masonry-image"));
+                       console.debug($image.height());
+                       var $height = $image.height();
+                       var $overlay = $( this ).find( ".text-content" );
+                       $overlay.toggle();
+                       $overlay.css("height" , $height);
+//                           $("#side").height( parent.height() );
+                        console.debug($overlay.height());
+
+                   });
+                });
         </script>
     </body>
 </html>
