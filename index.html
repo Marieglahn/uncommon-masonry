@@ -13,12 +13,16 @@
     <link href="stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
         <link media="screen" rel="stylesheet" type="text/css" href="stylesheets/masonry-view.css" />
             <script src="javascripts/jquery-1.11.1.min.js"></script>    
+        
+
+        
         <link href='http://fonts.googleapis.com/css?family=Sorts+Mill+Goudy:400italic' rel='stylesheet' type='text/css'>
 
 <!--    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>-->
 <!--    <script type="text/javascript" src="/javascripts/cache_9ff087e3f5ef9c22eab175d938d18ddf39c0a857.js"></script>-->
     <script src="javascripts/masonry.pkgd.min.js"></script>
     <script src="javascripts/imagesloaded.pkgd.min.js"></script>
+
 
         <meta name="csrf-param" content="authenticity_token" />
         <meta charset="utf8">
@@ -81,7 +85,7 @@
 
             <div class="page-header"><h1>Images</h1></div>
             
-<!--Page navigaton for Images page(s) -->
+<!--Page navigaton for Images page(s): Insert the right links -->
             <nav class="images-nav">
                 <ul>
                     <li><a href="#">URL IMAGES</a></li>
@@ -91,40 +95,86 @@
             </nav> 
             <div id="masonry-container" class="masonry-container">
 
+<!--            Cornerstamp:  If on brand images display corner-stamp else don't. Insert right links -->
                 <div class="corner-stamp">
-                    <nav class="brands-nav vertical">
+                    <nav class="brands-categories-nav vertical">
                         <ul>
                           <li>
-                            <a href="#">Brands</a>
+                            <a href="#" class="brands-categories-title">Brands</a>
+                              <ul class="images-sub-menu">
+                                  <li><a href="#">brand</a></li>
+                                  <li><a href="#">brand</a></li>
+                                  <li><a href="#">brand</a></li>
+                                  <li><a href="#">brand</a></li>
+                                  <li><a href="#">brand</a></li>
+                                  <li><a href="#">brand</a></li>
+                                  <li><a href="#">brand</a></li>
+                                  <li><a href="#">brand</a></li>
+                                  <li><a href="#">brand</a></li>
+                                  <li><a href="#">brand</a></li>
+                                  <li><a href="#">brand</a></li>
+
+                              </ul>
                           </li>
                            <li>
-                            <a href="#">Categories</a>
-                          </li>
-                            <li>
-                            <a href="#">Tags</a>
+                            <a href="#" class="brands-categories-title">Categories</a>
+                               <ul class="images-sub-menu">
+                                  <li><a href="#">brand</a></li>
+                                  <li><a href="#">brand</a></li>
+                                  <li><a href="#">brand</a></li>
+                                  <li><a href="#">brand</a></li>
+                                  <li><a href="#">brand</a></li>
+                                  <li><a href="#">brand</a></li>
+                                  <li><a href="#">brand</a></li>
+                                  <li><a href="#">brand</a></li>
+                                  <li><a href="#">brand</a></li>
+                                  <li><a href="#">brand</a></li>
+                                  <li><a href="#">brand</a></li>
+                                  <li><a href="#">brand</a></li>
+                                  <li><a href="#">brand</a></li>
+                                  <li><a href="#">brand</a></li>
+                                  <li><a href="#">brand</a></li>
+
+                               </ul>
                           </li>
                         </ul>
                     </nav>
-                </div> 
+                </div> <!--Corner-stamp end-->
+                
+<!--            Masonry item: For each masonry item display image, dimensions and title.-->
                 <div class="masonry-item">
                     <img class="masonry-image" src="images/1.jpg" alt="c"/>
+                    
+<!--                Text content overlay (displays on hover): Make links to save the image and make widget-->
+                    <div class=text-content>
+                        <span>
+                            <a href="#">Make widget</a>
+                            <a href="#">Save to my images</a>
+                        </span>
+                    </div>
                     <div class="image-dimensions">
                         <p>200x200</p>
                     </div>
                     <div class="masonry-image-title">
                         <p>image title goes here</p>
                     </div>
-                   
                 </div>
+<!--            Masonry item end-->
+
+                
+                
+                
+                
+                
+<!--                
                 <div class="masonry-item">
                     <div>
-                         <img src="images/2.jpg" alt="c"/>
+                         <img class="masonry-image" src="images/2.jpg" alt="c"/>
                         <div class=text-content>
                             <span>
                                 <a href="#">Make widget</a>
-                        <a href="#">Save to my images</a>
+                                <a href="#">Save to my images</a>
                             </span>
-
                         </div>
                     
                     </div>
@@ -253,54 +303,16 @@
                     </div>
                 </div>
             
-          </div>
+          </div>-->
 
             <hr />
             <footer>
                 <p>&copy; We Own It 2014</p>
             </footer>
         </div>
-            <script type="text/javascript">
-                
+        
+        <script src="javascripts/images-masonry-grid.js"></script>    
 
-                // initialize Masonry
-                var $container = $('#masonry-container').masonry();
-                
-                // layout Masonry again after all images have loaded
-                // NB. Potential problem with infinite scroll?
-                  $container.imagesLoaded( function() {
-                       console.log('test');
-                      
-                      $container.masonry({
-                          itemSelector: '.masonry-item',
-                          "gutter": 15,
-                          cornerStampSelector: '.corner-stamp',
-                      });
-
-                });
-                
-                var msnry = $container.data('masonry');
-                
-
-               
-              //Hover shows opaque overlay with links:
-               $(function() {
-                  $('.text-content').hide();
-                   
-                   
-                   $('.masonry-item').hover(function() {
-                       var $image = $(this).find($(".masonry-image"));
-                       console.debug($image.height());
-                       var $height = $image.height();
-                       var $overlay = $( this ).find( ".text-content" );
-                       $overlay.toggle();
-                       $overlay.css("height" , $height);
-//                           $("#side").height( parent.height() );
-                        console.debug($overlay.height());
-
-                   });
-                });
-        </script>
     </body>
 </html>
 

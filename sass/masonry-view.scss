@@ -17,7 +17,7 @@ $verticalmenufontsize: 12px;
 
 
 
-//General styling:
+//General styling (to be added somewhere else?):
 
 h1 {
     font-family: 'Sorts Mill Goudy', serif;
@@ -41,7 +41,6 @@ h1 {
         color: $lightgreyblue;
         font-size: $menufontsize;
         text-decoration: none;
-        
         padding: 10px 20px;
         border: 1px solid $lightgreyblue;
         &:hover {
@@ -57,10 +56,8 @@ h1 {
     ul {
         list-style-type: none;
         li {
-            //width: 150px;
             display: inline-block;                
-            margin-bottom: 10px;
-            
+            margin-bottom: 10px;  
         }
     }
 }
@@ -71,31 +68,25 @@ h1 {
     
     margin-bottom: 15px;
     font-size: 11px;
-//    @include border-radius(5px);
     .image-dimensions, .masonry-image-title  {
         text-align: center;
-        background-color: $white;
+        background-color: $white;  
     }
     .image-dimensions {
         padding: 2px;
     }
     .masonry-image-title {
         padding: 5px;
+            font-family: 'Sorts Mill Goudy', serif;
+    font-style: italic;
     }
-    img:hover {
-        
-        //opacity: 0.5;
-        background-color: $black;
-    }
-    
     .text-content {
         background: rgba(0,0,0,0.5);
         color: white;
         cursor: pointer;
         display: table;
-        height: inherit !important;
         left: 0;
-        position: absolute;
+        position: absolute !important;
         top: 0;
         width: 100%;
             a {
@@ -103,16 +94,13 @@ h1 {
             color: $white;
             display: block;
             }
-        }
-
+    }
     .text-content span {
     display: table-cell;
     text-align: center;
     vertical-align: middle;
     height: inherit; 
-
     }
-
 }
 
 img {
@@ -124,8 +112,7 @@ img {
     padding-top: 20px;
     padding-bottom: 20px;
     text-transform: uppercase;
-    
-    //background: $lightgreybeige;
+    height: 250px;
     nav.vertical {
         font-size: $verticalmenufontsize;
         
@@ -152,7 +139,14 @@ img {
                 display: block;                
                 margin-bottom: 10px;
                 width: 150px;
-                
+
+                ul{
+                    li { 
+                        a {
+                            border: 0;
+                        }
+                    }
+                }
             }
         }
         .masonry-image-overlay {
@@ -163,6 +157,10 @@ img {
             background-color: #000000;
             opacity: 0.5;
         }
+        .images-sub-menu {
+            height: 150px;
+            overflow: auto;
+        }
     }
 }
 
@@ -172,13 +170,12 @@ img {
 //@media (min-width: 1200px) {}
 //@media (min-width: 980px) {}
 
-
 @media (min-width: 768px) and (max-width: 979px) {
     .masonry-item, .corner-stamp { 
         width: 22%;
     }
 }
-//
+
 @media (max-width: 767px) { 
    .masonry-item, .corner-stamp { 
         width: 30%;
@@ -189,14 +186,14 @@ img {
 @media (max-width: 480px) {
     .masonry-item, .corner-stamp { 
     width: 48%;
-}
+    }
 }
 
 
 @media (max-width: 390px) {
     .masonry-item, .corner-stamp { 
     width: 100%;
-}
+    }
 }
 
 
