@@ -7,15 +7,6 @@
 
 //Ad to colors file:
 $lightgreybeige: #efeeee;
-$mediumgrey: #e5e5e5;
-
-
-//add to sizes:
-$h1size: 36px;
-$menufontsize: 14px;
-$verticalmenufontsize: 12px;
-
-
 
 //General styling (to be added somewhere else?):
 
@@ -165,14 +156,53 @@ img {
 }
 
 
-//
-//
-//@media (min-width: 1200px) {}
-//@media (min-width: 980px) {}
+
+//Widget overview/creation
+
+.masonry-product-name { 
+    //height: 40px;
+    @include truncate(); }
+
+
+
+@media (min-width: 1400px) {
+    .masonry-item, .corner-stamp { 
+        width: 13%;
+
+    }
+    .widget-product {
+        width: 22%;
+    }
+}
+
+@media (min-width: 1200px) and (max-width: 1399px) {
+    .masonry-item, .corner-stamp { 
+        width: 15%;
+
+    }
+    .widget-product {
+        width: 22%;
+    }
+
+}
+
+@media (min-width: 980px) and (max-width: 1199px)  {
+    .masonry-item, .corner-stamp { 
+        width: 15%;
+
+    }
+    .widget-product {
+       width: 30%;
+    }
+}
 
 @media (min-width: 768px) and (max-width: 979px) {
     .masonry-item, .corner-stamp { 
         width: 22%;
+    }
+    
+    .widget-product {
+       width: 45%;
     }
 }
 
@@ -185,7 +215,11 @@ img {
 
 @media (max-width: 480px) {
     .masonry-item, .corner-stamp { 
-    width: 48%;
+        width: 48%;
+
+    }
+        .widget-product {
+       width: 45%;
     }
 }
 
@@ -193,6 +227,9 @@ img {
 @media (max-width: 390px) {
     .masonry-item, .corner-stamp { 
     width: 100%;
+    }
+        .widget-product {
+       width: 45%;
     }
 }
 

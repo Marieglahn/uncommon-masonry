@@ -1,4 +1,4 @@
-/* line 22, ../sass/masonry-view.scss */
+/* line 13, ../sass/masonry-view.scss */
 h1 {
   font-family: 'Sorts Mill Goudy', serif;
   font-style: italic;
@@ -6,17 +6,17 @@ h1 {
   color: #111925;
 }
 
-/* line 29, ../sass/masonry-view.scss */
+/* line 20, ../sass/masonry-view.scss */
 .container, body {
   background-color: #efeeee;
   color: #111925;
 }
 
-/* line 37, ../sass/masonry-view.scss */
+/* line 28, ../sass/masonry-view.scss */
 .images-nav {
   margin-bottom: 20px;
 }
-/* line 39, ../sass/masonry-view.scss */
+/* line 30, ../sass/masonry-view.scss */
 .images-nav a {
   margin-right: 10px;
   color: #99a6b9;
@@ -25,50 +25,50 @@ h1 {
   padding: 10px 20px;
   border: 1px solid #99a6b9;
 }
-/* line 46, ../sass/masonry-view.scss */
+/* line 37, ../sass/masonry-view.scss */
 .images-nav a:hover {
   color: #63738a;
   border-color: #63738a;
 }
-/* line 50, ../sass/masonry-view.scss */
+/* line 41, ../sass/masonry-view.scss */
 .images-nav a:active {
   color: white;
   background-color: #111925;
   border-color: #111925;
 }
-/* line 56, ../sass/masonry-view.scss */
+/* line 47, ../sass/masonry-view.scss */
 .images-nav ul {
   list-style-type: none;
 }
-/* line 58, ../sass/masonry-view.scss */
+/* line 49, ../sass/masonry-view.scss */
 .images-nav ul li {
   display: inline-block;
   margin-bottom: 10px;
 }
 
-/* line 65, ../sass/masonry-view.scss */
+/* line 56, ../sass/masonry-view.scss */
 .masonry-item, .corner-stamp {
   width: 18%;
   color: #111925;
   margin-bottom: 15px;
   font-size: 11px;
 }
-/* line 71, ../sass/masonry-view.scss */
+/* line 62, ../sass/masonry-view.scss */
 .masonry-item .image-dimensions, .masonry-item .masonry-image-title, .corner-stamp .image-dimensions, .corner-stamp .masonry-image-title {
   text-align: center;
   background-color: white;
 }
-/* line 75, ../sass/masonry-view.scss */
+/* line 66, ../sass/masonry-view.scss */
 .masonry-item .image-dimensions, .corner-stamp .image-dimensions {
   padding: 2px;
 }
-/* line 78, ../sass/masonry-view.scss */
+/* line 69, ../sass/masonry-view.scss */
 .masonry-item .masonry-image-title, .corner-stamp .masonry-image-title {
   padding: 5px;
   font-family: 'Sorts Mill Goudy', serif;
   font-style: italic;
 }
-/* line 83, ../sass/masonry-view.scss */
+/* line 74, ../sass/masonry-view.scss */
 .masonry-item .text-content, .corner-stamp .text-content {
   background: rgba(0, 0, 0, 0.5);
   color: white;
@@ -79,12 +79,12 @@ h1 {
   top: 0;
   width: 100%;
 }
-/* line 92, ../sass/masonry-view.scss */
+/* line 83, ../sass/masonry-view.scss */
 .masonry-item .text-content a, .corner-stamp .text-content a {
   color: white;
   display: block;
 }
-/* line 98, ../sass/masonry-view.scss */
+/* line 89, ../sass/masonry-view.scss */
 .masonry-item .text-content span, .corner-stamp .text-content span {
   display: table-cell;
   text-align: center;
@@ -92,12 +92,12 @@ h1 {
   height: inherit;
 }
 
-/* line 106, ../sass/masonry-view.scss */
+/* line 97, ../sass/masonry-view.scss */
 img {
   max-width: 100%;
 }
 
-/* line 110, ../sass/masonry-view.scss */
+/* line 101, ../sass/masonry-view.scss */
 .corner-stamp {
   float: left;
   padding-top: 20px;
@@ -105,11 +105,11 @@ img {
   text-transform: uppercase;
   height: 250px;
 }
-/* line 116, ../sass/masonry-view.scss */
+/* line 107, ../sass/masonry-view.scss */
 .corner-stamp nav.vertical {
   font-size: 12px;
 }
-/* line 119, ../sass/masonry-view.scss */
+/* line 110, ../sass/masonry-view.scss */
 .corner-stamp nav.vertical a {
   color: #99a6b9;
   display: block;
@@ -117,32 +117,32 @@ img {
   padding: 10px 20px;
   border: 1px solid #99a6b9;
 }
-/* line 125, ../sass/masonry-view.scss */
+/* line 116, ../sass/masonry-view.scss */
 .corner-stamp nav.vertical a:hover {
   color: #63738a;
   border-color: #63738a;
 }
-/* line 129, ../sass/masonry-view.scss */
+/* line 120, ../sass/masonry-view.scss */
 .corner-stamp nav.vertical a:active {
   color: #111925;
   border-color: #111925;
 }
-/* line 134, ../sass/masonry-view.scss */
+/* line 125, ../sass/masonry-view.scss */
 .corner-stamp nav.vertical ul {
   list-style-type: none;
   text-align: center;
 }
-/* line 138, ../sass/masonry-view.scss */
+/* line 129, ../sass/masonry-view.scss */
 .corner-stamp nav.vertical ul li {
   display: block;
   margin-bottom: 10px;
   width: 150px;
 }
-/* line 145, ../sass/masonry-view.scss */
+/* line 136, ../sass/masonry-view.scss */
 .corner-stamp nav.vertical ul li ul li a {
   border: 0;
 }
-/* line 152, ../sass/masonry-view.scss */
+/* line 143, ../sass/masonry-view.scss */
 .corner-stamp nav.vertical .masonry-image-overlay {
   position: absolute;
   left: 0px;
@@ -151,33 +151,88 @@ img {
   background-color: #000000;
   opacity: 0.5;
 }
-/* line 160, ../sass/masonry-view.scss */
+/* line 151, ../sass/masonry-view.scss */
 .corner-stamp nav.vertical .images-sub-menu {
   height: 150px;
   overflow: auto;
 }
 
-@media (min-width: 768px) and (max-width: 979px) {
-  /* line 174, ../sass/masonry-view.scss */
+/* line 162, ../sass/masonry-view.scss */
+.masonry-product-name {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+@media (min-width: 1400px) {
+  /* line 169, ../sass/masonry-view.scss */
   .masonry-item, .corner-stamp {
+    width: 13%;
+  }
+
+  /* line 173, ../sass/masonry-view.scss */
+  .widget-product {
     width: 22%;
   }
 }
+@media (min-width: 1200px) and (max-width: 1399px) {
+  /* line 179, ../sass/masonry-view.scss */
+  .masonry-item, .corner-stamp {
+    width: 15%;
+  }
+
+  /* line 183, ../sass/masonry-view.scss */
+  .widget-product {
+    width: 22%;
+  }
+}
+@media (min-width: 980px) and (max-width: 1199px) {
+  /* line 190, ../sass/masonry-view.scss */
+  .masonry-item, .corner-stamp {
+    width: 15%;
+  }
+
+  /* line 194, ../sass/masonry-view.scss */
+  .widget-product {
+    width: 30%;
+  }
+}
+@media (min-width: 768px) and (max-width: 979px) {
+  /* line 200, ../sass/masonry-view.scss */
+  .masonry-item, .corner-stamp {
+    width: 22%;
+  }
+
+  /* line 204, ../sass/masonry-view.scss */
+  .widget-product {
+    width: 45%;
+  }
+}
 @media (max-width: 767px) {
-  /* line 180, ../sass/masonry-view.scss */
+  /* line 210, ../sass/masonry-view.scss */
   .masonry-item, .corner-stamp {
     width: 30%;
   }
 }
 @media (max-width: 480px) {
-  /* line 187, ../sass/masonry-view.scss */
+  /* line 217, ../sass/masonry-view.scss */
   .masonry-item, .corner-stamp {
     width: 48%;
   }
+
+  /* line 221, ../sass/masonry-view.scss */
+  .widget-product {
+    width: 45%;
+  }
 }
 @media (max-width: 390px) {
-  /* line 194, ../sass/masonry-view.scss */
+  /* line 228, ../sass/masonry-view.scss */
   .masonry-item, .corner-stamp {
     width: 100%;
+  }
+
+  /* line 231, ../sass/masonry-view.scss */
+  .widget-product {
+    width: 45%;
   }
 }
