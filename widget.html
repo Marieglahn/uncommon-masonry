@@ -12,6 +12,8 @@
     <link media="screen" rel="stylesheet" type="text/css" href="stylesheets/bootstrap-tags.css" />
     <link href="stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
     <link media="screen" rel="stylesheet" type="text/css" href="stylesheets/masonry-view.css" />
+    <link media="screen" rel="stylesheet" type="text/css" href="stylesheets/widget.css" />
+
     <script src="javascripts/jquery-1.11.1.min.js"></script>
     <script src="javascripts/tooltip.js"></script>
 
@@ -86,20 +88,6 @@
 
     <div class="container-fluid">
 
-
-
-
-        <ul class="breadcrumb">
-            <li><a href="/">Home</a>  <span class="divider">/</span>
-            </li>
-            <li><a href="/users/undefined/imageMappingWidgets">imageMappingWidgets</a>  <span class="divider">/</span>
-            </li>
-            <li class="active"><a href="#">New imageMappingWidget</a>
-            </li>
-        </ul>
-
-
-
         <div class="page-header">
             <h1>Create new widget</h1>
         </div>
@@ -115,8 +103,7 @@
         </nav>
 
         <div class="row-fluid">
-            <div class="span7">
-
+            <div class="span7" id="create-widget-container">
                 <form action="/users/53abd26453a7be8a701794d4/imageMappingWidgets" method="POST" id="imageMappingWidget-form" class="form-horizontal" enctype="multipart/form-data">
                     <input type="hidden" name="authenticity_token" value="d365797c3b8580a92e17f6ad56f6dcfd5d5a53c8" />
                     <div id="widget-image">
@@ -130,239 +117,37 @@
                     </div>
                 </form>
             </div>
-            <div class="span5">
-                <div>
-                <div class="controls">
-                    <input name="search" id="search" placeholder="Search products to add as hotspot" class="input-xlarge" value="" type="text" />
-                    <label class="radio">
-<input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
-DKK.
-</label>
-<label class="radio">
-<input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
-NOKK.
-</label>
-                </div>
-                </div>
-                <div id="masonry-container" class="masonry-container">
+            <div class="span5" id="add-products-container">
+                <div id="product-search-container" class="fixed">
+                    <h1 class="h1-sans-serif">Add hotspots</h1>
 
-<!--            Masonry item: For each masonry item display image, dimensions and title.-->
-                    <div class="masonry-item widget-product">
-                        <img class="masonry-image" src="images/1.jpg" alt="c" />
+                    <div>
+                        <div class="controls controls-row search-products">
+                            <form class="form-inline">
 
- <!--                Text content overlay (displays on hover): Make links to save the image and make widget-->
-                        <div class=text-content>
-                            <span>
-                            <a href="#">Add as hotspot</a>
-                            
-                        </span>
-                        </div>
-                        
-                        <div class="masonry-product-information product-tip" >
-                           
-                            <p class="masonry-brand-name">Norman Copenhagen</p>
-                        
-                            <p class="masonry-product-name ">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis.</p>
-                            
-                            <p class="masonry-product-price">1000,- dkk.</p>
+                                <input name="search" class="span8" id="search" placeholder="Search products to add as hotspot" class="input-xlarge" value="" type="text" />
+                                <select class="currency-selector span4">
+                                    <option>DKK</option>
+                                    <option>NOK</option>
+                                    <option>SEK</option>
+                                    <option>All</option>
+                                </select>
 
-                        </div>
-                        
-                    </div>
-                    <!--            Masonry item end-->
-
-                    
-                    
-                    <div class="masonry-item widget-product">
-                        <img class="masonry-image" src="images/1.jpg" alt="c" />
-
- <!--                Text content overlay (displays on hover): Make links to save the image and make widget-->
-                        <div class=text-content>
-                            <span>
-                            <a href="#">Add as hotspot</a>
-                            
-                        </span>
-                        </div>
-                        
-                        <div class="masonry-product-information product-tip">
-                           
-                            <p class="masonry-brand-name">Norman Copenhagen</p>
-                        
-                            <p class="masonry-product-name">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis.</p>
-                            <p class="masonry-product-price">1000,- dkk.</p>
-
-                        </div>
-                    </div><div class="masonry-item widget-product">
-                        <img class="masonry-image" src="images/1.jpg" alt="c" />
-
- <!--                Text content overlay (displays on hover): Make links to save the image and make widget-->
-                        <div class=text-content>
-                            <span>
-                            <a href="#">Add as hotspot</a>
-                            
-                        </span>
-                        </div>
-                        
-                        <div class="masonry-product-information">
-                           
-                            <p class="masonry-brand-name">Norman Copenhagen</p>
-                        
-                            <p class="masonry-product-name">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis.</p>
-                            <p class="masonry-product-price">1000,- dkk.</p>
-
-                        </div>
-                    </div><div class="masonry-item widget-product">
-                        <img class="masonry-image" src="images/1.jpg" alt="c" />
-
- <!--                Text content overlay (displays on hover): Make links to save the image and make widget-->
-                        <div class=text-content>
-                            <span>
-                            <a href="#">Add as hotspot</a>
-                            
-                        </span>
-                        </div>
-                        
-                        <div class="masonry-product-information">
-                           
-                            <p class="masonry-brand-name">Norman Copenhagen</p>
-                        
-                            <p class="masonry-product-name">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis.</p>
-                            <p class="masonry-product-price">1000,- dkk.</p>
-
-                        </div>
-                    </div><div class="masonry-item widget-product">
-                        <img class="masonry-image" src="images/1.jpg" alt="c" />
-
- <!--                Text content overlay (displays on hover): Make links to save the image and make widget-->
-                        <div class=text-content>
-                            <span>
-                            <a href="#">Add as hotspot</a>
-                            
-                        </span>
-                        </div>
-                        
-                        <div class="masonry-product-information">
-                           
-                            <p class="masonry-brand-name">Norman Copenhagen</p>
-                        
-                            <p class="masonry-product-name">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis.</p>
-                            <p class="masonry-product-price">1000,- dkk.</p>
-
-                        </div>
-                    </div><div class="masonry-item widget-product">
-                        <img class="masonry-image" src="images/1.jpg" alt="c" />
-
- <!--                Text content overlay (displays on hover): Make links to save the image and make widget-->
-                        <div class=text-content>
-                            <span>
-                            <a href="#">Add as hotspot</a>
-                            
-                        </span>
-                        </div>
-                        
-                        <div class="masonry-product-information">
-                           
-                            <p class="masonry-brand-name">Norman Copenhagen</p>
-                        
-                            <p class="masonry-product-name">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis.</p>
-                            <p class="masonry-product-price">1000,- dkk.</p>
-
-                        </div>
-                    </div><div class="masonry-item widget-product">
-                        <img class="masonry-image" src="images/1.jpg" alt="c" />
-
- <!--                Text content overlay (displays on hover): Make links to save the image and make widget-->
-                        <div class=text-content>
-                            <span>
-                            <a href="#">Add as hotspot</a>
-                            
-                        </span>
-                        </div>
-                        
-                        <div class="masonry-product-information">
-                           
-                            <p class="masonry-brand-name">Norman Copenhagen</p>
-                        
-                            <p class="masonry-product-name">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis.</p>
-                            <p class="masonry-product-price">1000,- dkk.</p>
-
-                        </div>
-                    </div><div class="masonry-item widget-product">
-                        <img class="masonry-image" src="images/1.jpg" alt="c" />
-
- <!--                Text content overlay (displays on hover): Make links to save the image and make widget-->
-                        <div class=text-content>
-                            <span>
-                            <a href="#">Add as hotspot</a>
-                            
-                        </span>
-                        </div>
-                        
-                        <div class="masonry-product-information">
-                           
-                            <p class="masonry-brand-name">Norman Copenhagen</p>
-                        
-                            <p class="masonry-product-name">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis.</p>
-                            <p class="masonry-product-price">1000,- dkk.</p>
-
-                        </div>
-                    </div><div class="masonry-item widget-product">
-                        <img class="masonry-image" src="images/1.jpg" alt="c" />
-
- <!--                Text content overlay (displays on hover): Make links to save the image and make widget-->
-                        <div class=text-content>
-                            <span>
-                            <a href="#">Add as hotspot</a>
-                            
-                        </span>
-                        </div>
-                        
-                        <div class="masonry-product-information">
-                           
-                            <p class="masonry-brand-name">Norman Copenhagen</p>
-                        
-                            <p class="masonry-product-name">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis.</p>
-                            <p class="masonry-product-price">1000,- dkk.</p>
-
-                        </div>
-                    </div><div class="masonry-item widget-product">
-                        <img class="masonry-image" src="images/1.jpg" alt="c" />
-
- <!--                Text content overlay (displays on hover): Make links to save the image and make widget-->
-                        <div class=text-content>
-                            <span>
-                            <a href="#">Add as hotspot</a>
-                            
-                        </span>
-                        </div>
-                        
-                        <div class="masonry-product-information">
-                           
-                            <p class="masonry-brand-name">Norman Copenhagen</p>
-                        
-                            <p class="masonry-product-name">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis.</p>
-                            <p class="masonry-product-price">1000,- dkk.</p>
-
-                        </div>
-                    </div><div class="masonry-item widget-product">
-                        <img class="masonry-image" src="images/1.jpg" alt="c" />
-
- <!--                Text content overlay (displays on hover): Make links to save the image and make widget-->
-                        <div class=text-content>
-                            <span>
-                            <a href="#">Add as hotspot</a>
-                            
-                        </span>
-                        </div>
-                        
-                        <div class="masonry-product-information">
-                           
-                            <p class="masonry-brand-name">Norman Copenhagen</p>
-                        
-                            <p class="masonry-product-name">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis.</p>
-                            <p class="masonry-product-price">Shopname 1000,- dkk.</p>
+                            </form>
                         </div>
                     </div>
+                </div>
+
+                <div id="empty-products-container">
+                    <ol class="instructions">
+                        <li>Search for products associated with your image.</li>
+                        <li>Click a product you want to connect with your image</li>
+                        <li>Click on your image to add hotspot with selected product.</li>
+                    </ol>
+                </div>
+                <div id="masonry-container" class="masonry-container widget-product-container">
+
+
                 </div>
 
 
@@ -379,28 +164,57 @@ NOKK.
 
     <script src="javascripts/images-masonry-grid.js"></script>
     <script type="text/javascript">
-       $(document).ready(function(){
-           
-           
-            $('.product-tip').tooltip({
-                 title: function() {
-                     $brand = $(this).children('.masonry-brand-name').text();
-                     $productname = $(this).children('.masonry-product-name').text();
-                     
-                    return $brand + '. ' + $productname
-                 },
-                placement: 'right'
-            });
-           
-           $('#image-width-tip').tooltip({
-                title: 'The max. image width is the width that the widget will be loaded at in your blogpost'
-           });
-           
-           $('#ImageMappingWidget_name').tooltip({
-               title: 'Preferably name your image the same as your blogpost'
-           });
+        $(document).ready(function () {
 
-       });
+            //Tooltips:
+            $(function () {
+                //Product description tooltip 
+                $('.product-tip').tooltip({
+                    title: function () {
+                        $brand = $(this).children('.masonry-brand-name').text();
+                        $productname = $(this).children('.masonry-product-name').text();
+
+                        return $brand + '. ' + $productname
+                    },
+                    placement: 'right'
+                });
+
+                //Tip on image width input field
+                $('#image-width-tip').tooltip({
+                    title: 'The max. image width is the width that the widget will be loaded at in your blogpost'
+                });
+
+                //Tip on image name input field
+                $('#ImageMappingWidget_name').tooltip({
+                    title: 'Preferably name your image the same as your blogpost'
+                });
+            });
+
+
+
+            //Sets the height of the products masonry view to be dynamic relative to the rest of the content:
+            $(function () {
+                var $createWidgetContainerHeight = $('#create-widget-container').height();
+                var $productSearchContainerHeight = $('#product-search-container').height();
+                var $remainingHeight = ($createWidgetContainerHeight - $productSearchContainerHeight);
+                $('.widget-product-container').css('max-height', $remainingHeight);
+                $('#empty-products-container').css('min-height', $remainingHeight);
+            });
+
+
+            //Display instructions if no products are displayed
+            $(function () {
+                if ($('.widget-product-container:empty')) {
+                    $('#empty-products-container').css('display', 'block');
+                } else {
+                    $('#empty-products-container').css('display', 'none');
+
+
+                }
+
+            });
+
+        });
     </script>
 
 

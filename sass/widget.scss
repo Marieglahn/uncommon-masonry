@@ -1,0 +1,71 @@
+
+@import "colors";
+@import "fonts";
+@import "mixins";
+@import "sizes";
+
+
+//Add to fonts:
+$heading-s-m-g: "Sorts Mill Goudy", "Hoefler Text", "Baskerville", "Palatino", "Georgia", "Times New Roman", serif;
+$font-stack:    'Open Sans', sans-serif;
+
+
+
+.h1-sans-serif {
+    font-family: $font-stack;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: normal;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.masonry-brand-name {
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.search-products {
+    margin-bottom: 10px;
+}
+
+.widget-product-container {
+    overflow: scroll;
+}
+
+.text-content-link {
+        color: $white;
+        font-size: 12px;
+        text-decoration: none;
+        //padding: 10px;
+    //margin: 0;
+       // border: 1px solid $white;
+    text-transform: uppercase;
+}
+
+#empty-products-container{
+    display: none;
+    border: 5px dashed $white;
+    padding: 30px;
+    box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    -webkit-box-sizing:border-box;
+    ol.instructions {
+        display: table-cell;
+        vertical-align: middle;
+        height: inherit; 
+        list-style-type: decimal !important;
+        font-family: $heading-s-m-g;
+        font-size: 20px;
+        li {
+            margin-bottom: 30px;
+            margin-left: 30px;
+        }
+    } 
+}
+@media (max-width: 767px) {
+    .container-fluid {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}

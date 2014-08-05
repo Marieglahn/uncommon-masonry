@@ -11,7 +11,7 @@ $lightgreybeige: #efeeee;
 //General styling (to be added somewhere else?):
 
 h1 {
-    font-family: 'Sorts Mill Goudy', serif;
+    font-family: $heading-s-m-g;
     font-style: italic;
     font-size: $h1size;
     color: $text;
@@ -20,6 +20,18 @@ h1 {
 .container, body {
     background-color: $lightgreybeige;
     color: $text;
+}
+
+.navbar {
+    border: 0;
+}
+.navbar-inner {
+    background-color: $white;
+    border: 0;
+    .container {
+        background-color: $white;
+        border: 0;
+    }
 }
 
 
@@ -56,7 +68,7 @@ h1 {
 .masonry-item, .corner-stamp { 
     width: 18%;
     color: $text;
-    
+    text-align: center;
     margin-bottom: 15px;
     font-size: 11px;
     .image-dimensions, .masonry-image-title  {
@@ -68,8 +80,8 @@ h1 {
     }
     .masonry-image-title {
         padding: 5px;
-            font-family: 'Sorts Mill Goudy', serif;
-    font-style: italic;
+        font-family: 'Sorts Mill Goudy', serif;
+        font-style: italic;
     }
     .text-content {
         background: rgba(0,0,0,0.5);
@@ -100,13 +112,34 @@ img {
 
 .corner-stamp {
     float: left;
-    padding-top: 20px;
     padding-bottom: 20px;
-    text-transform: uppercase;
-    height: 250px;
-    nav.vertical {
-        font-size: $verticalmenufontsize;
+
+    nav.vertical, #corner-stamp-upload-img {
+        text-transform: uppercase;
+    }
+    #corner-stamp-upload-img {
+        background-color: $black_blue;
+        color: $white;
+        text-align: center;
+        font-size: 18px;
+        padding: 10px;
+        font-weight: 300;
+        cursor: pointer;
+    }
+    #corner-stamp-desc {
+        background-color: $white;
+        padding: 30px 20px 20px;
+        font-size: 20px;
+        font-family: $heading-s-m-g;
+        font-style: italic;
+        text-align: center;
         
+    }
+    nav.vertical {
+        padding-top: 20px;
+        font-size: $verticalmenufontsize;
+        height: 250px;
+
         a {
             color: $lightgreyblue;
             display: block;
@@ -139,14 +172,6 @@ img {
                     }
                 }
             }
-        }
-        .masonry-image-overlay {
-            position: absolute;
-            left: 0px;
-            top: 0px;
-            z-index: 1000;
-            background-color: #000000;
-            opacity: 0.5;
         }
         .images-sub-menu {
             height: 150px;
@@ -193,6 +218,14 @@ img {
     }
     .widget-product {
        width: 30%;
+    }
+    
+   
+    .corner-stamp {
+        #corner-stamp-desc {
+        padding: 20px 15px 15px;
+        font-size: 16px;
+        }
     }
 }
 

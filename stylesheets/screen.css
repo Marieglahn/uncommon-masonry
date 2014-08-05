@@ -63,8 +63,8 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   display: block;
 }
 
-/* line 8, ../sass/screen.scss */
+/* line 10, ../sass/screen.scss */
 body {
-  font: 100% Helvetica, sans-serif;
+  font: 100% "Open Sans", sans-serif;
   color: grey;
 }

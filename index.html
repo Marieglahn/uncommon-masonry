@@ -14,7 +14,7 @@
         <link media="screen" rel="stylesheet" type="text/css" href="stylesheets/masonry-view.css" />
             <script src="javascripts/jquery-1.11.1.min.js"></script>    
         
-
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300' rel='stylesheet' type='text/css'><!-- HUSK DETTE! -->
         
         <link href='http://fonts.googleapis.com/css?family=Sorts+Mill+Goudy:400italic' rel='stylesheet' type='text/css'>
 
@@ -97,6 +97,25 @@
 
 <!--            Cornerstamp:  If on brand images display corner-stamp else don't. Insert right links -->
                 <div class="corner-stamp">
+                    
+<!--                    Following is the corner-stamp for "My images"-->
+<!--
+                    <div id="corner-stamp-desc">
+                    <p>Create a widget by tapping one of your images.<br>
+                        or<br>
+                        Go to your local drive to:</p>
+                    </div>
+                    <div id="corner-stamp-upload-img">
+                    <p>Upload image</p>
+                    </div>
+-->
+                    
+<!--                Following is the corner-stamp for "Web images"-->
+                    <div id="corner-stamp-desc">
+                    <p>These are the images from the page you just visited. Hover any image to save or to create a widget right away.</p>
+                    </div>
+                    
+<!--                The following block is for the Brands page:    
                     <nav class="brands-categories-nav vertical">
                         <ul>
                           <li>
@@ -138,8 +157,9 @@
                                </ul>
                           </li>
                         </ul>
-                    </nav>
-                </div> Corner-stamp end
+                    </nav>-->
+                </div> 
+<!--                Corner-stamp end-->
                 
 <!--            Masonry item: For each masonry item display image, dimensions and title.-->
                 <div class="masonry-item">
@@ -185,7 +205,14 @@
                             <p>image title goes here</p>
                         </div>
                 </div>
-                <div class="masonry-item"><img src="images/23.jpg" alt="k">
+                <div class="masonry-item">
+                    <img class="masonry-image" src="images/23.jpg" alt="k">
+                    <div class=text-content>
+                            <span>
+                                <a href="#">Make widget</a>
+                                <a href="#">Save to my images</a>
+                            </span>
+                        </div>
                     <div class="image-dimensions">
                         <p>200x200</p>
                     </div>
@@ -311,7 +338,13 @@
             </footer>
         </div>
         
-        <script src="javascripts/images-masonry-grid.js"></script>    
+        <script src="javascripts/images-masonry-grid.js"></script> 
+        <script type="text/javascript">
+        $( "#corner-stamp-upload-img" ).click(function() {
+                alert( "insert upload image code here" );
+        });
+            
+        </script>
 
     </body>
 </html>

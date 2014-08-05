@@ -1,0 +1,90 @@
+
+@import "colors";
+@import "fonts";
+@import "mixins";
+@import "sizes";
+
+
+$lightgreybeige: #efeeee;
+$white: #fff;
+$black: #000;
+$black_blue: #111925;
+$medgreyblue: #63738a;
+$lightgreyblue: #99a6b9;
+$lightgreybeige: #efeeee;
+
+$text: $black_blue;
+$menu: $black_blue;
+$menu_text: $white;
+
+
+//Add to fonts:
+$heading-s-m-g: "Sorts Mill Goudy", "Hoefler Text", "Baskerville", "Palatino", "Georgia", "Times New Roman", serif;
+$font-stack:    'Open Sans', sans-serif;
+
+.pop-up-div {
+    border: 1px solid #e3e5e1;
+    color: $white;
+    padding: 20px;
+    background-color: #bfc1bd;
+    min-width: 400px;
+    position: absolute;
+    z-index: 999;
+    font-family: $heading-s-m-g;
+    text-align: center;
+    font-size: 22px;
+    .pop-up-btn-list {
+        padding: 0;
+        margin: 0;
+        text-align: center;
+            a {
+                text-transform: uppercase;
+                font-family: $font-stack;
+                font-size: 16px;
+                color: $white;
+                text-decoration: none;
+                padding: 10px 20px;
+                background-color: $black_blue;
+                &:hover {
+                    color: $white;
+                    border-color: $medgreyblue;
+                }
+            }
+        list-style-type: none;
+        li {
+            display: inline-block;   
+            height: auto;
+            padding: 20px 0;
+            cursor: pointer;
+            width: 140px;
+        }
+    }
+    h1 {
+       font-family: $font-stack;
+        text-transform: uppercase;
+        color: $text;
+        font-weight: 400;
+        margin: 0 0 40px;
+
+    }
+    p {
+        margin: 0;
+    }
+    .close {
+        a {
+           text-decoration: none;
+           color: $white;
+            line-height: 1.5;
+           border-radius: 50%;
+           width: 20px;
+           height: 20px;
+           float: right;
+           border: 1px solid $white;
+           cursor: pointer;
+           font-family: $font-stack;
+           font-size: 22px;
+           line-height: 18px;
+        }
+    }
+}
+
