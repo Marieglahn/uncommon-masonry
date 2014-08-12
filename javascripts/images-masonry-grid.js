@@ -3,7 +3,7 @@
 var $container = $('#masonry-container').masonry();
 
 // layout Masonry again after all images have loaded
-// NB. Potential problem when introducing infinite scroll?
+// NB. Potential problem with infinite scroll?
   $container.imagesLoaded( function() {
       $container.masonry({
           itemSelector: '.masonry-item',

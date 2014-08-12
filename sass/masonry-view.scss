@@ -93,16 +93,15 @@ h1 {
         top: 0;
         width: 100%;
             a {
-
             color: $white;
             display: block;
             }
     }
     .text-content span {
-    display: table-cell;
-    text-align: center;
-    vertical-align: middle;
-    height: inherit; 
+        display: table-cell;
+        text-align: center;
+        vertical-align: middle;
+        height: inherit; 
     }
 }
 
@@ -186,7 +185,8 @@ img {
 
 .masonry-product-name { 
     //height: 40px;
-    @include truncate(); }
+    @include truncate(); 
+}
 
 
 

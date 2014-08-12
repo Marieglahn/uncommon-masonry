@@ -1,0 +1,29 @@
+/* line 1, ../sass/widgets-list.scss */
+.widget-container {
+  margin-bottom: 20px;
+  text-align: center;
+}
+/* line 5, ../sass/widgets-list.scss */
+.widget-container .widget-image-container {
+  background-color: #eae8e8;
+  padding-top: 5px;
+}
+/* line 8, ../sass/widgets-list.scss */
+.widget-container .widget-image-container img {
+  text-align: center;
+  max-height: 100%;
+  max-height: 800px;
+}
+
+/* line 16, ../sass/widgets-list.scss */
+.widget-list-container {
+  max-width: 700px;
+  margin: auto;
+}
+
+@media (max-width: 1400px) {
+  /* line 23, ../sass/widgets-list.scss */
+  .widget-container img {
+    max-height: 600px;
+  }
+}

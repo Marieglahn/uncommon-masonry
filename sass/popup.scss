@@ -50,11 +50,11 @@ $font-stack:    'Open Sans', sans-serif;
                     border-color: $medgreyblue;
                 }
             }
-        list-style-type: none;
+            list-style-type: none;
         li {
             display: inline-block;   
             height: auto;
-            padding: 20px 0;
+            padding: 20px 20px;
             cursor: pointer;
             width: 140px;
         }

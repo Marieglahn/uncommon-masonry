@@ -1,0 +1,161 @@
+/* line 8, ../sass/general.scss */
+h1 {
+  font-family: "Sorts Mill Goudy", "Hoefler Text", "Baskerville", "Palatino", "Georgia", "Times New Roman", serif;
+  font-style: italic;
+  font-size: 36px;
+  color: #111925;
+  font-weight: 400 !important;
+}
+
+/* line 17, ../sass/general.scss */
+.h1-sans-serif {
+  font-family: "Open Sans", sans-serif;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: normal;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+/* line 26, ../sass/general.scss */
+.container, body {
+  background-color: #efeeee;
+  color: #111925;
+  border: 0;
+}
+
+/* line 32, ../sass/general.scss */
+.navbar {
+  border: 0;
+  box-shadow: none;
+}
+
+/* line 37, ../sass/general.scss */
+.navbar-inner {
+  background-color: white;
+  border: 0 !important;
+  background-image: none;
+  box-shadow: none;
+}
+/* line 43, ../sass/general.scss */
+.navbar-inner .container {
+  background-color: white;
+  border: 0;
+}
+
+/* line 51, ../sass/general.scss */
+.page-header h1 {
+  font-family: "Sorts Mill Goudy", "Hoefler Text", "Baskerville", "Palatino", "Georgia", "Times New Roman", serif;
+  font-style: italic;
+  font-size: 36px;
+  color: #111925;
+  font-weight: 400 !important;
+}
+
+/* line 61, ../sass/general.scss */
+html body div.container-fluid div.page-header h1 {
+  font-family: "Sorts Mill Goudy", "Hoefler Text", "Baskerville", "Palatino", "Georgia", "Times New Roman", serif;
+  font-style: italic;
+  font-size: 36px;
+  color: #111925;
+  font-weight: 400 !important;
+}
+
+/* line 69, ../sass/general.scss */
+.images-nav {
+  margin-bottom: 20px;
+}
+/* line 71, ../sass/general.scss */
+.images-nav a {
+  margin-right: 10px;
+  color: #99a6b9;
+  font-size: 14px;
+  text-decoration: none;
+  padding: 10px 20px;
+  border: 1px solid #99a6b9;
+}
+/* line 78, ../sass/general.scss */
+.images-nav a:hover {
+  color: #63738a;
+  border-color: #63738a;
+}
+/* line 82, ../sass/general.scss */
+.images-nav a:active {
+  color: white;
+  background-color: #111925;
+  border-color: #111925;
+}
+/* line 88, ../sass/general.scss */
+.images-nav ul {
+  list-style-type: none;
+  margin: 0;
+}
+/* line 91, ../sass/general.scss */
+.images-nav ul li {
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+/* line 98, ../sass/general.scss */
+.btn, .btn-primary, #upload-images-button {
+  box-sizing: border-box;
+  min-width: 130px;
+  min-height: 35px;
+  border-radius: 0 !important;
+  -moz-border-radius: 0 !important;
+  border: 0;
+  background-image: none;
+  background-color: #111925;
+  color: white;
+  text-decoration: none;
+  text-shadow: none;
+  font: "Open Sans", sans-serif;
+}
+/* line 111, ../sass/general.scss */
+.btn:hover, .btn-primary:hover, #upload-images-button:hover {
+  background-color: #33363D;
+  color: white;
+}
+
+/* line 119, ../sass/general.scss */
+.btn-group .btn {
+  box-sizing: border-box;
+  min-width: 130px;
+  min-height: 35px;
+  border-radius: 0;
+  -moz-border-radius: 0;
+  border: 0;
+  background-image: none;
+  background-color: #111925;
+  color: white;
+  text-decoration: none;
+  text-shadow: none;
+  font: "Open Sans", sans-serif;
+}
+/* line 132, ../sass/general.scss */
+.btn-group .btn:hover {
+  background-color: #33363D;
+  color: white;
+}
+
+/* line 143, ../sass/general.scss */
+input [type="textarea"],
+textarea,
+input[type="text"],
+input#search {
+  box-sizing: border-box;
+  min-width: 130px;
+  min-height: 35px;
+  border-radius: 0;
+  -moz-border-radius: 0;
+}
+
+/* line 153, ../sass/general.scss */
+.float-right-form-elements, .float-right {
+  float: right;
+}
+
+/* line 157, ../sass/general.scss */
+.float-left-form-elements, .float-left {
+  float: left;
+}

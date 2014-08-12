@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>dashboard#index</title>
+    <link media="screen" rel="stylesheet" type="text/css" href="stylesheets/bootstrap.css" />
+    <link media="screen" rel="stylesheet" type="text/css" href="stylesheets/fineuploader.css" />
+    <link media="screen" rel="stylesheet" type="text/css" href="stylesheets/application.css" />
+    <link media="screen" rel="stylesheet" type="text/css" href="stylesheets/bootstrap-responsive.css" />
+    <link media="screen" rel="stylesheet" type="text/css" href="stylesheets/widget.css" />
+    <link media="screen" rel="stylesheet" type="text/css" href="stylesheets/entypo.css" />
+    <link media="screen" rel="stylesheet" type="text/css" href="stylesheets/bootstrap-tags.css" />
+    <link href="stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
+    <link media="screen" rel="stylesheet" type="text/css" href="stylesheets/masonry-view.css" />
+    <link media="screen" rel="stylesheet" type="text/css" href="stylesheets/widgets-list.css" />
+    <link media="screen" rel="stylesheet" type="text/css" href="stylesheets/general.css" />
+
+    <script src="javascripts/jquery-1.11.1.min.js"></script>
+    <script src="javascripts/tooltip.js"></script>
+
+
+
+
+    <link href='http://fonts.googleapis.com/css?family=Sorts+Mill+Goudy:400italic' rel='stylesheet' type='text/css'>
+
+    <!--    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>-->
+    <!--    <script type="text/javascript" src="/javascripts/cache_9ff087e3f5ef9c22eab175d938d18ddf39c0a857.js"></script>-->
+    <script src="javascripts/masonry.pkgd.min.js"></script>
+    <script src="javascripts/imagesloaded.pkgd.min.js"></script>
+
+
+    <meta name="csrf-param" content="authenticity_token" />
+    <meta charset="utf8">
+    <meta name="viewport" content="initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0">
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="navbar-inner">
+            <div class="container">
+                <a class="brand" href="/">We Own It</a>
+                <ul class="nav">
+
+                    <li class="">
+                        <a href="/users">Users</a>
+                    </li>
+
+                    <li class="">
+                        <a href="/widgets">Widgets</a>
+                    </li>
+                    <li class="">
+                        <a href="/imageMappingWidgets">Image Mapping Widgets</a>
+                    </li>
+                    <li class="">
+                        <a href="/products">Products</a>
+                    </li>
+                    <li class="">
+                        <a href="/images">Images</a>
+                    </li>
+
+                    <li class="">
+                        <a href="/brands">Brands</a>
+                    </li>
+
+
+                    <li class="">
+                        <a href="/categories">Categories</a>
+                    </li>
+
+
+                    <li class="">
+                        <a href="/admin">XML Import</a>
+                    </li>
+
+                </ul>
+                <ul class="nav pull-right">
+                    <li>
+                        <a href="/edit">Marie Glahn</a>
+                    </li>
+                    <li>
+                        <a href="/logout">Logout</a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+
+
+    <div class="container-fluid">
+        <div class="page-header">
+            <h1>My widgets</h1>
+        </div>
+        <div class="widget-list-container">
+            <!--Foreach widget that should be shown: remember to include _show_widget instead of image-->
+            <div class="widget-container">
+                 <div class="widget-image-container">
+
+                <!--            <%- include _show_widget %>-->
+
+                    <img class="masonry-image" src="images/1.jpg" alt="c" />
+                </div>
+                <div class="row-fluid margin-auto">
+                    <div class="span3">
+                        <p>Image name</p>
+                    </div>
+                    <div class="span9">
+                        <div class="span6">
+                            <!--textarea class="input-xlarge"><div style="height: 0px; width: 100%; position: relative; padding-bottom: <%= imageMappingWidgetPadding %>%">[iframe src="<%= imageMappingWidgetLink %>" width="100%" height="100%" style="position:absolute; top:0px; left;0px"]</div></textarea-->
+                            <textarea class="input-xlarge">
+                                <img src="http://weownit.tlabs.se/uploads/<%= imageMappingWidget.id %>/main.jpg" class="woi-image" data-id="<%= imageMappingWidget.id %>" style="width:<% if (imageMappingWidget.requiredWidth) { %><%=imageMappingWidget.requiredWidth%>px<% } else { %>100%<% } %>;height:auto" />
+                                <script src="http://weownit.tlabs.se/javascripts/embed.js">
+                                    void(0);
+                                </script>
+                            </textarea>
+                        </div>
+
+
+                        <!--                        From original:-->
+                        <!--
+                        <%- link_to( '<i class="icon-edit icon-white"></i> Edit', pathTo.edit_user_imageMappingWidget(imageMappingWidget), {class: 'btn btn-primary'}) %>
+                            <%- link_to( '<i class="icon-remove icon-white"></i> Delete', pathTo.user_imageMappingWidget(imageMappingWidget), {class: 'btn btn-danger', method: 'delete', remote: true, jsonp: '(function (u) { location.href = u; })'}) %>
+-->
+                        <div class="span6">
+                            <a href="/users/53cd0d13c4f378e705000001/imageMappingWidgets/53cd0d13c4f378e705000001/edit" class="btn btn-primary"><i class="icon-edit icon-white"></i> Edit</a>
+                            <a href="/users/53cd0d13c4f378e705000001/imageMappingWidgets/53cd0d13c4f378e705000001" class="btn btn-danger" data-remote="true" data-method="delete" data-jsonp="(function (u) { location.href = u; })"><i class="icon-remove icon-white"></i> Delete</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            
+                        <div class="widget-container">
+                <!--            <%- include _show_widget %>-->
+                <div class="widget-image-container">
+
+                    <img class="masonry-image margin-auto" src="images/DeathtoStock_Spring4.jpg" alt="c" />
+                </div>
+                <div class="row-fluid margin-auto">
+                    <div class="span3">
+                        <p>Image name</p>
+                    </div>
+                    <div class="span9">
+                        <div class="span6">
+                            <!--textarea class="input-xlarge"><div style="height: 0px; width: 100%; position: relative; padding-bottom: <%= imageMappingWidgetPadding %>%">[iframe src="<%= imageMappingWidgetLink %>" width="100%" height="100%" style="position:absolute; top:0px; left;0px"]</div></textarea-->
+                            <textarea class="input-xlarge">
+                                <img src="http://weownit.tlabs.se/uploads/<%= imageMappingWidget.id %>/main.jpg" class="woi-image" data-id="<%= imageMappingWidget.id %>" style="width:<% if (imageMappingWidget.requiredWidth) { %><%=imageMappingWidget.requiredWidth%>px<% } else { %>100%<% } %>;height:auto" />
+                                <script src="http://weownit.tlabs.se/javascripts/embed.js">
+                                    void(0);
+                                </script>
+                            </textarea>
+                        </div>
+
+
+                        <!--                        From original:-->
+                        <!--
+                        <%- link_to( '<i class="icon-edit icon-white"></i> Edit', pathTo.edit_user_imageMappingWidget(imageMappingWidget), {class: 'btn btn-primary'}) %>
+                            <%- link_to( '<i class="icon-remove icon-white"></i> Delete', pathTo.user_imageMappingWidget(imageMappingWidget), {class: 'btn btn-danger', method: 'delete', remote: true, jsonp: '(function (u) { location.href = u; })'}) %>
+-->
+                        <div class="span6">
+                            <a href="/users/53cd0d13c4f378e705000001/imageMappingWidgets/53cd0d13c4f378e705000001/edit" class="btn btn-primary"><i class="icon-edit icon-white"></i> Edit</a>
+                            <a href="/users/53cd0d13c4f378e705000001/imageMappingWidgets/53cd0d13c4f378e705000001" class="btn btn-danger" data-remote="true" data-method="delete" data-jsonp="(function (u) { location.href = u; })"><i class="icon-remove icon-white"></i> Delete</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            
+                        <div class="widget-container">
+                <!--            <%- include _show_widget %>-->
+                <div class="widget-image-container">
+
+                    <img class="masonry-image margin-auto" src="images/DeathtoStock_Wired3.jpg" alt="c" />
+                </div>
+                <div class="row-fluid margin-auto">
+                    <div class="span3">
+                        <p>Image name</p>
+                    </div>
+                    <div class="span9">
+                        <div class="span6">
+                            <!--textarea class="input-xlarge"><div style="height: 0px; width: 100%; position: relative; padding-bottom: <%= imageMappingWidgetPadding %>%">[iframe src="<%= imageMappingWidgetLink %>" width="100%" height="100%" style="position:absolute; top:0px; left;0px"]</div></textarea-->
+                            <textarea class="input-xlarge">
+                                <img src="http://weownit.tlabs.se/uploads/<%= imageMappingWidget.id %>/main.jpg" class="woi-image" data-id="<%= imageMappingWidget.id %>" style="width:<% if (imageMappingWidget.requiredWidth) { %><%=imageMappingWidget.requiredWidth%>px<% } else { %>100%<% } %>;height:auto" />
+                                <script src="http://weownit.tlabs.se/javascripts/embed.js">
+                                    void(0);
+                                </script>
+                            </textarea>
+                        </div>
+
+
+                        <!--                        From original:-->
+                        <!--
+                        <%- link_to( '<i class="icon-edit icon-white"></i> Edit', pathTo.edit_user_imageMappingWidget(imageMappingWidget), {class: 'btn btn-primary'}) %>
+                            <%- link_to( '<i class="icon-remove icon-white"></i> Delete', pathTo.user_imageMappingWidget(imageMappingWidget), {class: 'btn btn-danger', method: 'delete', remote: true, jsonp: '(function (u) { location.href = u; })'}) %>
+-->
+                        <div class="span6">
+                            <a href="/users/53cd0d13c4f378e705000001/imageMappingWidgets/53cd0d13c4f378e705000001/edit" class="btn btn-primary"><i class="icon-edit icon-white"></i> Edit</a>
+                            <a href="/users/53cd0d13c4f378e705000001/imageMappingWidgets/53cd0d13c4f378e705000001" class="btn btn-danger" data-remote="true" data-method="delete" data-jsonp="(function (u) { location.href = u; })"><i class="icon-remove icon-white"></i> Delete</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            
+            
+            
+        </div>
+    </div>
+
+
+
+
+
+    <!--
+Markup for the final could be something like this (without me having tested it for real in project scope). With code from app/views/imageMappingWidgets/index.ejs including the _show_widget.ejs
+-->
+    <div class="container-fluid">
+        <div class="page-header">
+            <h1>My widgets</h1>
+        </div>
+        <div class="widget-list-container">
+
+            <p>
+                <%- link_to( '<i class="icon-plus icon-white"></i> New imageMappingWidget', pathTo.new_user_imageMappingWidget(loggedInUser), {class: 'btn btn-primary'}) %>
+            </p>
+
+            <% if (imageMappingWidgets.length>0) { %>
+                <!--       Foreach widget that should be shown: -->
+                <% imageMappingWidgets.forEach(function (imageMappingWidget) { %>
+                  <div class="widget-container">
+
+                    <!--    gets and displays the widget-->
+                     <div class="widget-image-container">
+                        <%- include _show_widget %>
+                     </div>
+                        <div class="span3">
+                            <p>
+                                <%- link_to(imageMappingWidget.name, pathTo.user_imageMappingWidget(imageMappingWidget)) %>
+                            </p>
+                        </div>
+                        <div class="span9">
+
+                            <div class="span6">
+
+                                <!--                        I don't know what this following outcommented code does, if anything:-->
+                                <!--textarea class="input-xlarge"><div style="height: 0px; width: 100%; position: relative; padding-bottom: <%= imageMappingWidgetPadding %>%">[iframe src="<%= imageMappingWidgetLink %>" width="100%" height="100%" style="position:absolute; top:0px; left;0px"]</div></textarea-->
+
+                                <!--                    Embed code here:-->
+                                <textarea class="input-xlarge">
+                                    <img src="http://weownit.tlabs.se/uploads/<%= imageMappingWidget.id %>/main.jpg" class="woi-image" data-id="<%= imageMappingWidget.id %>" style="width:<% if (imageMappingWidget.requiredWidth) { %><%=imageMappingWidget.requiredWidth%>px<% } else { %>100%<% } %>;height:auto" />
+                                    <script src="http://weownit.tlabs.se/javascripts/embed.js">
+                                        void(0);
+                                    </script>
+                                </textarea>
+                            </div>
+                            <div class="span6">
+                                <!--                    Edit btn:-->
+                                <%- link_to( '<i class="icon-edit"></i> Edit', pathTo.edit_user_imageMappingWidget(imageMappingWidget), {class: 'btn btn-mini'}) %>
+                                    <!--                    Delete btn:-->
+                                    <%- link_to( '<i class="icon-remove icon-white"></i> Delete', pathTo.user_imageMappingWidget(imageMappingWidget), {class: 'btn btn-mini btn-danger', method: 'delete', remote: true, jsonp: '(function (u) {location.href = u;})'}) %>
+                            </div>
+                                    </div>
+                                </div>
+                            <% }); %>
+                                <% } else { %>
+                                    <p class="alert alert-block alert-info">
+                                        <strong>No imageMappingWidgets were found.</strong>
+                                    </p>
+                                    <% } %>
+                        
+        </div>
+
+    </div>
+
+
+
+
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+

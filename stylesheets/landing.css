@@ -1,0 +1,285 @@
+/* Global */
+/* Navigation */
+/* line 24, ../sass/landing.scss */
+#logo {
+  text-align: center;
+  margin: 10px 0;
+}
+
+/* General Slides */
+/* line 33, ../sass/landing.scss */
+.slide {
+  background-attachment: fixed;
+  width: 100%;
+  height: auto;
+  position: relative;
+  padding: 100px 0;
+}
+
+/* Slide 1 */
+/* line 45, ../sass/landing.scss */
+#slide1 {
+  background: #efeeee;
+  background-position-x: center !important;
+  height: auto;
+}
+
+/* line 67, ../sass/landing.scss */
+#slide1 h1 {
+  font-size: 3.8em;
+  letter-spacing: -3px;
+  line-height: 0px;
+  color: #8a8683;
+  font-weight: 700;
+}
+
+/* line 74, ../sass/landing.scss */
+#slide1 h2 {
+  font-size: 2em;
+  color: #8a8683;
+  line-height: 0px;
+  padding-bottom: 20px;
+  font-weight: 400;
+}
+
+/* Slide 2 */
+/* line 87, ../sass/landing.scss */
+#slide2 {
+  box-sizing: border-box;
+  background-color: #111925;
+  color: #ffffff;
+}
+/* line 89, ../sass/landing.scss */
+#slide2 .slide-content {
+  background-color: #111925;
+  color: white;
+}
+
+/* Slide 3 */
+/* line 103, ../sass/landing.scss */
+#slide3 {
+  text-align: center;
+  height: 500px;
+  padding-top: 250px;
+  background-image: url("../images/widget.png");
+}
+/* line 110, ../sass/landing.scss */
+#slide3 h1 {
+  color: white;
+  font-family: "Open Sans", sans-serif;
+  text-transform: uppercase;
+  font-size: 36px;
+  font-style: normal;
+}
+
+/* Slide 4 */
+/* line 124, ../sass/landing.scss */
+#slide4 {
+  background-image: url("../images/sunglasses.png");
+  background-color: #8a8683;
+  color: #ffffff;
+}
+
+/* line 129, ../sass/landing.scss */
+#slide4 h1 {
+  font-size: 3.8em;
+  letter-spacing: -3px;
+  line-height: 0px;
+  color: #ffffff;
+  font-weight: 700;
+}
+
+/* line 136, ../sass/landing.scss */
+#slide4 h2 {
+  font-size: 2em;
+  color: #ffffff;
+  line-height: 0px;
+  padding-bottom: 20px;
+  font-weight: 400;
+}
+
+/* line 146, ../sass/landing.scss */
+#slide5 {
+  box-sizing: border-box;
+  background-color: #111925;
+  color: #ffffff;
+}
+/* line 148, ../sass/landing.scss */
+#slide5 .slide-content {
+  background-color: #111925;
+  color: white;
+}
+/* line 151, ../sass/landing.scss */
+#slide5 .slide-content h1, #slide5 .slide-content h2 {
+  color: white;
+  text-transform: uppercase;
+  font-size: 20px;
+}
+
+/* Tablet */
+@media screen and (max-width: 1024px) {
+  /* line 166, ../sass/landing.scss */
+  #logo {
+    width: 100%;
+    text-align: center;
+  }
+
+  /* line 171, ../sass/landing.scss */
+  #nav {
+    width: 100%;
+    text-align: center;
+    margin: 10px 0;
+  }
+
+  /* line 177, ../sass/landing.scss */
+  .navigation {
+    width: 100%;
+    float: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  /* line 185, ../sass/landing.scss */
+  .navigation li {
+    float: left;
+    width: 25%;
+    padding: 0;
+  }
+
+  /* line 191, ../sass/landing.scss */
+  .slide {
+    background-attachment: fixed;
+    width: 100%;
+    position: relative;
+    padding: 150px 0;
+  }
+
+  /* line 198, ../sass/landing.scss */
+  #decorative {
+    display: none;
+  }
+
+  /* line 202, ../sass/landing.scss */
+  #content {
+    text-align: center;
+    width: 100%;
+  }
+
+  /* line 207, ../sass/landing.scss */
+  #slide1 h1 {
+    line-height: 1em;
+  }
+
+  /* line 210, ../sass/landing.scss */
+  #slide1 h2 {
+    line-height: 1em;
+  }
+
+  /* line 213, ../sass/landing.scss */
+  #slide2 h1 {
+    line-height: 1em;
+  }
+
+  /* line 216, ../sass/landing.scss */
+  #slide2 h2 {
+    line-height: 1em;
+  }
+
+  /* line 219, ../sass/landing.scss */
+  #slide3 h1 {
+    line-height: 1em;
+  }
+
+  /* line 222, ../sass/landing.scss */
+  #slide3 h2 {
+    line-height: 1em;
+  }
+
+  /* line 225, ../sass/landing.scss */
+  #slide4 h1 {
+    line-height: 1em;
+  }
+
+  /* line 228, ../sass/landing.scss */
+  #slide4 h2 {
+    line-height: 1em;
+  }
+}
+/* Mobile */
+@media screen and (max-width: 480px) {
+  /* line 240, ../sass/landing.scss */
+  #logo {
+    width: 100%;
+    text-align: center;
+  }
+
+  /* line 245, ../sass/landing.scss */
+  #nav {
+    width: 100%;
+    margin: 5px 0;
+  }
+
+  /* line 250, ../sass/landing.scss */
+  .navigation {
+    width: 100%;
+    float: left;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  /* line 258, ../sass/landing.scss */
+  .navigation li {
+    float: left;
+    width: 25%;
+  }
+
+  /* line 263, ../sass/landing.scss */
+  .slide {
+    background-attachment: fixed;
+    width: 100%;
+    position: relative;
+    padding: 150px 0;
+  }
+
+  /* line 271, ../sass/landing.scss */
+  #slide1 h1 {
+    line-height: 1em;
+  }
+
+  /* line 274, ../sass/landing.scss */
+  #slide1 h2 {
+    line-height: 1em;
+  }
+
+  /* line 277, ../sass/landing.scss */
+  #slide2 h1 {
+    line-height: 1em;
+  }
+
+  /* line 280, ../sass/landing.scss */
+  #slide2 h2 {
+    line-height: 1em;
+  }
+
+  /* line 283, ../sass/landing.scss */
+  #slide3 h1 {
+    line-height: 1em;
+  }
+
+  /* line 286, ../sass/landing.scss */
+  #slide3 h2 {
+    line-height: 1em;
+  }
+
+  /* line 289, ../sass/landing.scss */
+  #slide4 h1 {
+    line-height: 1em;
+  }
+
+  /* line 292, ../sass/landing.scss */
+  #slide4 h2 {
+    line-height: 1em;
+  }
+}

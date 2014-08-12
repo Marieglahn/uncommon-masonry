@@ -1,4 +1,6 @@
 $lv-font-size: 13px;
+$heading-s-m-g: "Sorts Mill Goudy", "Hoefler Text", "Baskerville", "Palatino", "Georgia", "Times New Roman", serif;
+$font-stack:    'Open Sans', sans-serif;
 
 @mixin truncate(){
   white-space: nowrap;
@@ -6,5 +8,3 @@ $lv-font-size: 13px;
   text-overflow: ellipsis;
 
 }
-
-$heading-s-m-g: "Sorts Mill Goudy", "Hoefler Text", "Baskerville", "Palatino", "Georgia", "Times New Roman", serif;

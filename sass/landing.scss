@@ -1,0 +1,301 @@
+
+@import "colors";
+@import "fonts";
+@import "mixins";
+@import "sizes";
+
+
+//remove after:
+$lightgreybeige: #efeeee;
+$white: #fff;
+$black: #000;
+$black_blue: #111925;
+$medgreyblue: #63738a;
+$lightgreyblue: #99a6b9;
+$lightgreybeige: #efeeee;
+
+
+/* Global */
+
+
+
+/* Navigation */
+
+#logo {
+	text-align: center;
+	margin: 10px 0;
+}
+
+
+
+/* General Slides */ 
+
+.slide{
+	background-attachment: fixed;
+	width:100%;
+	height:auto;
+	position: relative;
+	padding:100px 0;
+}
+
+
+
+/* Slide 1 */ 
+
+#slide1{
+//    .bg-image-center {
+//        margin: auto;
+//        max-width: 600px;
+//       
+//        background: url('../images/decorative.png') no-repeat;
+//        background-position: 0;
+//        //height: 400px;
+//    }
+       // background: url('../images/decorative.png') no-repeat;
+
+//-webkit-background-size: cover;
+//-moz-background-size: cover;
+//-o-background-size: cover;
+//background-size: cover;
+   background: $lightgreybeige;
+//    background-position: center !important;
+//    background-position-x: center !important;
+//    background-repeat: no-repeat;
+    background-position-x: center !important;
+    height: auto;
+}
+#slide1 h1 {
+	font-size: 3.8em;
+	letter-spacing: -3px;
+	line-height: 0px;
+	color:#8a8683;
+	font-weight: 700;
+}
+#slide1 h2 {
+	font-size: 2em;
+	color: #8a8683;
+	line-height: 0px;
+	padding-bottom:20px;
+	font-weight: 400;
+}
+
+
+
+
+/* Slide 2 */ 
+
+#slide2{
+    box-sizing: border-box;
+    .slide-content{
+        background-color: $black_blue;
+        color: $white;
+    }
+	background-color: $black_blue;
+	color:#ffffff;
+}
+
+
+
+
+
+/* Slide 3 */ 
+
+#slide3{
+    text-align: center;
+    height: 500px;
+    padding-top: 250px;
+    background-image: url('../images/widget.png');
+
+
+    h1 {
+        color: $white;
+        font-family: $font-stack;
+        text-transform: uppercase;
+        font-size: 36px;
+        font-style: normal;
+    }
+	
+}
+
+
+
+/* Slide 4 */
+
+#slide4{
+	background-image:url('../images/sunglasses.png');
+	background-color:#8a8683;
+	color:#ffffff;
+}
+#slide4 h1 {
+	font-size: 3.8em;
+	letter-spacing: -3px;
+	line-height: 0px;
+	color:#ffffff;
+	font-weight: 700;
+}
+#slide4 h2 {
+	font-size: 2em;
+	color: #ffffff;
+	line-height: 0px;
+	padding-bottom:20px;
+	font-weight: 400;
+}
+
+
+
+#slide5{
+    box-sizing: border-box;
+    .slide-content{
+        background-color: $black_blue;
+        color: $white;
+        h1, h2 {
+                color: $white;
+            text-transform: uppercase;
+            font-size: 20px;
+
+        }
+    }
+	background-color: $black_blue;
+	color:#ffffff;
+}
+
+
+/* Tablet */
+@media screen and (max-width: 1024px) {
+
+#logo {
+	width: 100%;
+	text-align: center;
+}
+
+#nav {
+	width:100%;
+	text-align:center;
+	margin:10px 0;
+}
+
+.navigation{
+	width: 100%;
+	float: center;
+	list-style: none;
+	margin: 0;
+	padding:0;
+}
+
+.navigation li{
+	float: left;
+	width:25%;
+	padding:0;
+}
+
+.slide{
+	background-attachment: fixed;
+	width:100%;
+	position: relative;
+	padding:150px 0;
+}
+
+#decorative {
+	display:none;
+}
+
+#content {
+	text-align:center;
+	width:100%;
+}
+
+#slide1 h1 {
+	line-height: 1em;
+}
+#slide1 h2 {
+	line-height: 1em;
+}
+#slide2 h1 {
+	line-height: 1em;
+}
+#slide2 h2 {
+	line-height: 1em;
+}
+#slide3 h1 {
+	line-height: 1em;
+}
+#slide3 h2 {
+	line-height: 1em;
+}
+#slide4 h1 {
+	line-height: 1em;
+}
+#slide4 h2 {
+	line-height: 1em;
+}
+
+}
+
+
+
+
+/* Mobile */
+@media screen and (max-width: 480px) {
+
+#logo {
+	width: 100%;
+	text-align: center;
+}
+
+#nav {
+	width:100%;
+	margin:5px 0;
+}
+
+.navigation{
+	width: 100%;
+	float: left;
+	list-style: none;
+	margin: 0;
+	padding:0;
+}
+
+.navigation li{
+	float: left;
+	width:25%;
+}
+
+.slide{
+	background-attachment: fixed;
+	width:100%;
+	position: relative;
+	padding:150px 0;
+}
+
+
+#slide1 h1 {
+	line-height: 1em;
+}
+#slide1 h2 {
+	line-height: 1em;
+}
+#slide2 h1 {
+	line-height: 1em;
+}
+#slide2 h2 {
+	line-height: 1em;
+}
+#slide3 h1 {
+	line-height: 1em;
+}
+#slide3 h2 {
+	line-height: 1em;
+}
+#slide4 h1 {
+	line-height: 1em;
+}
+#slide4 h2 {
+	line-height: 1em;
+}
+
+
+}
+
+
+
+

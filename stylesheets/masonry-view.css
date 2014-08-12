@@ -101,7 +101,7 @@ h1 {
   color: white;
   display: block;
 }
-/* line 101, ../sass/masonry-view.scss */
+/* line 100, ../sass/masonry-view.scss */
 .masonry-item .text-content span, .corner-stamp .text-content span {
   display: table-cell;
   text-align: center;
@@ -109,21 +109,21 @@ h1 {
   height: inherit;
 }
 
-/* line 109, ../sass/masonry-view.scss */
+/* line 108, ../sass/masonry-view.scss */
 img {
   max-width: 100%;
 }
 
-/* line 113, ../sass/masonry-view.scss */
+/* line 112, ../sass/masonry-view.scss */
 .corner-stamp {
   float: left;
   padding-bottom: 20px;
 }
-/* line 117, ../sass/masonry-view.scss */
+/* line 116, ../sass/masonry-view.scss */
 .corner-stamp nav.vertical, .corner-stamp #corner-stamp-upload-img {
   text-transform: uppercase;
 }
-/* line 120, ../sass/masonry-view.scss */
+/* line 119, ../sass/masonry-view.scss */
 .corner-stamp #corner-stamp-upload-img {
   background-color: #111925;
   color: white;
@@ -133,7 +133,7 @@ img {
   font-weight: 300;
   cursor: pointer;
 }
-/* line 129, ../sass/masonry-view.scss */
+/* line 128, ../sass/masonry-view.scss */
 .corner-stamp #corner-stamp-desc {
   background-color: white;
   padding: 30px 20px 20px;
@@ -142,13 +142,13 @@ img {
   font-style: italic;
   text-align: center;
 }
-/* line 138, ../sass/masonry-view.scss */
+/* line 137, ../sass/masonry-view.scss */
 .corner-stamp nav.vertical {
   padding-top: 20px;
   font-size: 12px;
   height: 250px;
 }
-/* line 143, ../sass/masonry-view.scss */
+/* line 142, ../sass/masonry-view.scss */
 .corner-stamp nav.vertical a {
   color: #99a6b9;
   display: block;
@@ -156,38 +156,38 @@ img {
   padding: 10px 20px;
   border: 1px solid #99a6b9;
 }
-/* line 149, ../sass/masonry-view.scss */
+/* line 148, ../sass/masonry-view.scss */
 .corner-stamp nav.vertical a:hover {
   color: #63738a;
   border-color: #63738a;
 }
-/* line 153, ../sass/masonry-view.scss */
+/* line 152, ../sass/masonry-view.scss */
 .corner-stamp nav.vertical a:active {
   color: #111925;
   border-color: #111925;
 }
-/* line 158, ../sass/masonry-view.scss */
+/* line 157, ../sass/masonry-view.scss */
 .corner-stamp nav.vertical ul {
   list-style-type: none;
   text-align: center;
 }
-/* line 162, ../sass/masonry-view.scss */
+/* line 161, ../sass/masonry-view.scss */
 .corner-stamp nav.vertical ul li {
   display: block;
   margin-bottom: 10px;
   width: 150px;
 }
-/* line 169, ../sass/masonry-view.scss */
+/* line 168, ../sass/masonry-view.scss */
 .corner-stamp nav.vertical ul li ul li a {
   border: 0;
 }
-/* line 176, ../sass/masonry-view.scss */
+/* line 175, ../sass/masonry-view.scss */
 .corner-stamp nav.vertical .images-sub-menu {
   height: 150px;
   overflow: auto;
 }
 
-/* line 187, ../sass/masonry-view.scss */
+/* line 186, ../sass/masonry-view.scss */
 .masonry-product-name {
   white-space: nowrap;
   overflow: hidden;

@@ -9,22 +9,57 @@
 }
 
 /* line 23, ../sass/widget.scss */
+#widget-image {
+  max-height: 1000px;
+}
+
+/* line 27, ../sass/widget.scss */
+.widget-image-container {
+  position: relative;
+}
+
+/* line 31, ../sass/widget.scss */
+.widget-add-hotspot-overlay {
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  cursor: pointer;
+  display: table;
+  left: 0;
+  position: absolute !important;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+}
+/* line 41, ../sass/widget.scss */
+.widget-add-hotspot-overlay p {
+  color: white;
+  display: block;
+}
+/* line 45, ../sass/widget.scss */
+.widget-add-hotspot-overlay span {
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+  height: inherit;
+}
+
+/* line 53, ../sass/widget.scss */
 .masonry-brand-name {
   text-transform: uppercase;
   font-weight: 600;
 }
 
-/* line 28, ../sass/widget.scss */
+/* line 58, ../sass/widget.scss */
 .search-products {
   margin-bottom: 10px;
 }
 
-/* line 32, ../sass/widget.scss */
+/* line 62, ../sass/widget.scss */
 .widget-product-container {
   overflow: scroll;
 }
 
-/* line 36, ../sass/widget.scss */
+/* line 66, ../sass/widget.scss */
 .text-content-link {
   color: white;
   font-size: 12px;
@@ -32,7 +67,7 @@
   text-transform: uppercase;
 }
 
-/* line 46, ../sass/widget.scss */
+/* line 76, ../sass/widget.scss */
 #empty-products-container {
   display: none;
   border: 5px dashed white;
@@ -41,7 +76,7 @@
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
 }
-/* line 53, ../sass/widget.scss */
+/* line 83, ../sass/widget.scss */
 #empty-products-container ol.instructions {
   display: table-cell;
   vertical-align: middle;
@@ -50,14 +85,28 @@
   font-family: "Sorts Mill Goudy", "Hoefler Text", "Baskerville", "Palatino", "Georgia", "Times New Roman", serif;
   font-size: 20px;
 }
-/* line 60, ../sass/widget.scss */
+/* line 90, ../sass/widget.scss */
 #empty-products-container ol.instructions li {
   margin-bottom: 30px;
   margin-left: 30px;
 }
 
+/* line 97, ../sass/widget.scss */
+.blue-overlay {
+  background: rgba(166, 214, 225, 0.7);
+  color: white;
+  cursor: pointer;
+  display: table;
+  left: 0;
+  position: absolute !important;
+  top: 0;
+  width: 100%;
+  z-index: 1999;
+  border: 1px solid white;
+}
+
 @media (max-width: 767px) {
-  /* line 67, ../sass/widget.scss */
+  /* line 111, ../sass/widget.scss */
   .container-fluid {
     padding-left: 10px;
     padding-right: 10px;
